@@ -1,0 +1,21 @@
+{
+	"servers": {
+		"my-mcp-server-55d5ffa0": {
+			"url": " https://api.githubcopilot.com/mcp/",
+			"type": "http"
+		}
+	},
+	
+	"headers": {
+  		"Authorization": "Bearer ${input:github_token}" 
+	}
+	,
+	"inputs": [
+		{
+			"id": "github_token",
+    		"type": "promptString",
+    		"description": "GitHub Personal Access Token",
+    		"password": true
+		}
+	]
+}
